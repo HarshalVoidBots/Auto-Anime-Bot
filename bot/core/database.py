@@ -1,4 +1,4 @@
-from motor.motor_asyncio import AsyncIOMotorClient
+hifrom motor.motor_asyncio import AsyncIOMotorClient
 from bot import Var
 
 class MongoDB:
@@ -21,4 +21,4 @@ class MongoDB:
     async def reboot(self):
         await self.__animes.drop()
 
-db = MongoDB(Var.MONGO_URI, "FZAutoAnimes")
+db = MongoDB(Var.MONGO_URI, "AnimeShrine")
